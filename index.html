@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency-Converter</title>
+
+</head>
+<body>
+
+    
+        <div class="heading"> 
+        <h1> Currency Converter</h1>
+        <p> This Currency converter will help you convert all Four <br> Currencies in real time.</p
+        </div>
+        </div>
+       
+        
+    <br><br>
+   <h1 style="color:white;">   <marquee> How to Currency Convert by Javascript </marquee> </h1> 
+    <div class="dina">
+      <h2 > Select Currency </h2>
+     
+        <select name="currency" id="inputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+
+
+        <option value="taka">Bangladeshi Taka</option>
+        <option value="Rupee"> Indian Rupee</option>
+        <option value="Doller"> US Doller</option>
+        <option value="Rial"> Southi Rial</option>
+
+
+      </select>
+
+
+      <input oninput="firstToSecond()" onchange="firstToSecond()" type="number" id="firstCurrency" type="number"/>
+<br><br>
+      <h2> Converter Currency </h2>
+       
+     <select name="currency" id="OutputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+
+
+        <option value="taka1">Bangladeshi Taka</option>
+        <option value="Rupee1"> Indian Rupee</option>
+        <option value="Doller1"> US Dollar</option>
+        <option value="Rial1"> Southi Riall</option>
+      </select>
+    
+
+      <input type="number"  id="SecondCurrency"  type="number"/>
+
+      <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
+
+
+      <h3 style= "font-size: 20px; color: rgb(56, 22, 22) font-style: italic">Name:Shohaib Islam  <br>
+        ID: 182-15-11547<br>
+        Section:D <br>
+         Batch:50th</h3>
+
+    </div>
+
+
+
+      <script type="text/javascript">
+
+      function firstToSecond(){
+       var input1=document.getElementById("firstCurrency").value;
+       var input2=document.getElementById("SecondCurrency").value;
+
+       if(document.getElementById("inputCurrency").value=='taka'){
+        
+        if(document.getElementById("OutputCurrency").value=='taka1') {      
+
+       document.getElementById("SecondCurrency").value=input1*1;
+
+      }
+
+     else if(document.getElementById("OutputCurrency").value=='Rupee1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.85942;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Doller1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.01182;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Rial1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.04433;
+
+}
+      
+}
+
+
+
+
+
+
+
+if(document.getElementById("inputCurrency").value=='Rupee'){
+        
+        if(document.getElementById("OutputCurrency").value=='taka1') {      
+
+       document.getElementById("SecondCurrency").value=input1*1.13876;
+
+      }
+
+     else if(document.getElementById("OutputCurrency").value=='Rupee1') {      
+
+document.getElementById("SecondCurrency").value=input1*1;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Doller1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.01373;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Rial1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.05149;
+
+}
+      
+}
+
+
+    if(document.getElementById("inputCurrency").value=='Doller'){
+        
+        if(document.getElementById("OutputCurrency").value=='taka1') {      
+
+       document.getElementById("SecondCurrency").value=input1*82.9257;
+
+      }
+
+     else if(document.getElementById("OutputCurrency").value=='Rupee1') {      
+
+document.getElementById("SecondCurrency").value=input1*72.6941;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Doller1') {      
+
+document.getElementById("SecondCurrency").value=input1*1;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Rial1') {      
+
+document.getElementById("SecondCurrency").value=input1*3.74985;
+
+}
+      
+      
+}
+
+
+    if(document.getElementById("inputCurrency").value=='Rial'){
+        
+        if(document.getElementById("OutputCurrency").value=='taka1') {      
+
+       document.getElementById("SecondCurrency").value=input1*22.1005;
+
+      }
+
+     else if(document.getElementById("OutputCurrency").value=='Rupee1') {      
+
+document.getElementById("SecondCurrency").value=input1*19.3737;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Doller1') {      
+
+document.getElementById("SecondCurrency").value=input1*0.2667;
+
+}
+
+else if(document.getElementById("OutputCurrency").value=='Rial1') {      
+
+document.getElementById("SecondCurrency").value=input1*1;
+
+}
+      
+}
+
+
+
+
+
+
+
+
+}
+    </script>
+
+   
+</body>
+</html>

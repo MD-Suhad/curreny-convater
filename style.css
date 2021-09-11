@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-image: url('image/c1.jpeg');
+}
+
+.heading{
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    background: #00848c;
+    color: white;
+}
+
+.heading h1{
+    font-size: 35px;
+}
+.heading p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.dina{
+    text-align: center;
+    font-size:larger;
+   
+}
+
+.dina h2{
+    color:white;
+    
+}
+
+.h1{
+    color: white;
+}
